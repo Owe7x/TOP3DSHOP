@@ -1,0 +1,48 @@
+.container {
+    margin: 0 auto;
+    padding: 0px 10px;
+    &--header {
+        width: 100%;
+        max-width: 1440px;
+        padding: 0;
+        box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.16);
+        @include breakpoint($l14-bp) {
+            max-width: 1080px;
+        }
+        @include breakpoint($l12-bp) {
+            max-width: 991px;
+        }
+        @include breakpoint($t91-bp) {
+            max-width: 768px;
+        }
+        @include breakpoint($m76-bp) {
+            max-width: 575px;
+        }
+        @include breakpoint($sm-bp) {
+            max-width: 100%;
+        }
+
+    }
+    &--inner {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include breakpoint($l14-bp) {
+            max-width: 1200px;
+            padding: 0 10px;
+        }
+        
+    }
+    &--nav {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0;
+        @include breakpoint($l14-bp) {
+            max-width: 1200px;
+            padding: 0 10px;
+        }
+    }
+}

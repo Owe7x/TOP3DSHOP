@@ -1,0 +1,46 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "vendor/reset";
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;    
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: $primary;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline
+    }
+}
+img { 
+    width: auto; 
+    max-width: 100%; 
+}
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/social";
+@import "blocks/form";
+@import "blocks/btn";
+@import "blocks/page";
+@import "blocks/about";
+@import "blocks/burger";
