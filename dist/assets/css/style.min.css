@@ -598,13 +598,13 @@ img {
       font-weight: normal; }
 
 .menu__item {
-  display: block;
-  cursor: pointer;
-  position: relative; }
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
   .menu__item li {
     list-style: none; }
   .menu__item:hover .menu__item-link {
-    visibility: visible; }
+    display: block; }
   .menu__item:hover img {
     transition: transform 0.2s linear;
     transform: rotate(180deg); }
@@ -618,13 +618,11 @@ img {
     display: none; }
 
 .menu__item-link {
-  visibility: hidden;
+  display: none;
   position: absolute;
-  top: 35px;
-  left: 0;
   background: #fff;
   box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.16);
-  z-index: 2;
+  z-index: 1;
   width: 150px;
   padding: 10px 15px; }
   .menu__item-link ul li {
